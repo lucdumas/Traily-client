@@ -2,6 +2,7 @@ import * as React from 'react'
 import { useState, useEffect } from 'react'
 import Map, { Marker, Popup } from 'react-map-gl'
 import 'mapbox-gl/dist/mapbox-gl.css'
+import ReactMapGL from 'react-map-gl'
 
 import Register from './components/Register'
 import Login from './components/Login'
