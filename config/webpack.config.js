@@ -416,7 +416,7 @@ module.exports = function (webpackEnv) {
                 customize: require.resolve(
                   'babel-preset-react-app/webpack-overrides'
                 ),
-                ignore: ['./node_modules/mapbox-gl/dist/mapbox-gl.js'],
+
                 presets: [
                   [
                     require.resolve('babel-preset-react-app'),
@@ -447,6 +447,7 @@ module.exports = function (webpackEnv) {
               exclude: /@babel(?:\/|\\{1,2})runtime/,
               loader: require.resolve('babel-loader'),
               options: {
+                ignore: ['./node_modules/mapbox-gl/dist/mapbox-gl.js'],
                 babelrc: false,
                 configFile: false,
                 compact: false,
