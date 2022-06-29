@@ -28,7 +28,9 @@ function App() {
   useEffect(() => {
     const getPins = async () => {
       try {
-        const res = await axios.get('https://trailheadpin.herokuapp.com/pins')
+        const res = await axios.get(
+          'https://trailheadpin.herokuapp.com/api/pins'
+        )
         setPins(res.data)
       } catch (error) {
         console.log(error)
@@ -64,7 +66,7 @@ function App() {
 
     try {
       const res = await axios.post(
-        'https://trailheadpin.herokuapp.com/pins',
+        'https://trailheadpin.herokuapp.com/api/pins',
         newPin
       )
       setPins([...pins], res.data)
