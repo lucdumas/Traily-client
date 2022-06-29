@@ -14,7 +14,10 @@ export default function Login({ setShowLogin, myStorage, setCurrentUser }) {
       password: passwordRef.current.value,
     }
     try {
-      const res = await axios.post('/users/login', user)
+      const res = await axios.post(
+        'https://trailheadpin.herokuapp.com/api/users/login',
+        user
+      )
       myStorage.setItem('user', res.data.username)
       setCurrentUser(res.data.username)
       setShowLogin(false)

@@ -19,7 +19,10 @@ export default function Register({ setShowRegister }) {
       password: passwordRef.current.value,
     }
     try {
-      await axios.post('/users/register', newUser)
+      await axios.post(
+        'https://trailheadpin.herokuapp.com/api/users/register',
+        newUser
+      )
       setError(false)
       setSuccess(true)
     } catch (error) {
