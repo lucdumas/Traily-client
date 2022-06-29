@@ -1,0 +1,214 @@
+.topwrapper {
+  display: flex;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* /// New Form /// */
+.formContainer {
+  height: auto;
+  width: max-content;
+  height: max-content;
+  flex: 2 1 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logo3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #22c55e;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.form_all {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-family: inherit;
+}
+/* Already Added */
+.title1 {
+  color: #078080;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.formContainer1 {
+  display: flex;
+  flex-direction: column;
+}
+/* //  */
+.formCancel {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  cursor: pointer;
+}
+
+.formBtn {
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background: #94a3b8;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  appearance: button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+.formBtn:hover {
+  transform: scale(0.98);
+}
+
+.success {
+  font-size: 12px;
+  color: green;
+  text-align: center;
+}
+
+.failure {
+  font-size: 12px;
+  color: red;
+  text-align: center;
+}
+
+/* ///// */
+
+.card {
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  width: max-content;
+  color: black;
+  font-size: 13px;
+  margin: 3px 0;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.place {
+  font-size: 16px;
+  color: black;
+}
+.desc {
+  font-size: 14px;
+  color: black;
+}
+
+.username {
+  font-size: 10px;
+  margin-top: 20px;
+}
+
+.date {
+  font-size: 10px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-size: 12px;
+  color: rgb(185, 184, 184);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+textarea {
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.buttons,
+.logout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin-bottom: 7px;
+  color: white;
+  font-weight: 450;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: scale(0.98);
+}
+
+.button:focus {
+  outline: none;
+}
+
+.logout {
+  background-color: #f97316;
+}
+
+.login {
+  background-color: #14b8a6;
+}
+
+.register {
+  background-color: #0284c7;
+}
